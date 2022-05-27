@@ -6,7 +6,7 @@
 /*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/27 19:43:44 by joeduard          #+#    #+#             */
-/*   Updated: 2022/05/27 19:43:48 by joeduard         ###   ########.fr       */
+/*   Updated: 2022/05/27 20:28:08 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,30 +47,31 @@ while (data->cmds_piped[id])
 
 static void	find_redirects(t_data *data, int id)
 {
+
+	int		i;
 	int		j;
-	int		k;
 	int		init;
 
-	j = -1;
-	k = 0;
-	while (data->cmds_piped[id][++j])
+	i = -1;
+	j = 0;
+	while (data->cmds_piped[id][++i])
 	{
-		if (!ft_strchr("><", data->cmds_piped[id][j]))
+		if (!ft_strchr("><", data->cmds_piped[id][i]))
 			continue ;
-		init = j;
-		if (data->cmds_piped[id][j] == '>')
-			data->file_mode[id][k] = GREAT;
-		else if (data->cmds_piped[id][j] == '<')
-			data->file_mode[id][k] = LESS;
-		if (data->cmds_piped[id][j] == data->cmds_piped[id][j + 1])
-			data->file_mode[id][k] *= 2;
-		j += 1 + (!(data->file_mode[id][k] % 2));
-		j += save_file(data->cmds_piped[id] + j, &data->file[id][k]);
-		ft_strcut(&data->cmds_piped[id], init, j);
-		j = init - 1;
-		if (!data->file[id][k] || !data->cmds_piped[id])
+		init = i;
+		if (data->cmds_piped[id][i] == '>')
+			data->file_mode[id][j] = GREAT;
+		else if (data->cmds_piped[id][i] == '<')
+			data->file_mode[id][j] = LESS;
+		if (data->cmds_piped[id][i] == data->cmds_piped[id][i + 1])
+			data->file_mode[id][j] *= 2;
+		i += 1 + (!(data->file_mode[id][j] % 2));
+		i += save_file(data->cmds_piped[id] + i, &data->file[id][j]);
+		ft_strcut(&data->cmds_piped[id], init, i);
+		i = init - 1;
+		if (!data->file[id][j] || !data->cmds_piped[id])
 			exit_minishell(data, FAILURE);
-		k++;
+		j++;
 	}
 }
 
