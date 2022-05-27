@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   specifier_x_or_upper_x.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vlima-nu <vlima-nu@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/01 17:24:50 by vlima-nu          #+#    #+#             */
-/*   Updated: 2021/11/01 17:24:50 by vlima-nu         ###   ########.fr       */
+/*   Created: 2022/05/27 20:18:30 by joeduard          #+#    #+#             */
+/*   Updated: 2022/05/27 20:18:30 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

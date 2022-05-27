@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   minishell.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ebresser <ebresser@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/10 19:10:08 by ebresser          #+#    #+#             */
-/*   Updated: 2022/05/24 21:53:02 by ebresser         ###   ########.fr       */
+/*   Created: 2022/05/27 20:21:21 by joeduard          #+#    #+#             */
+/*   Updated: 2022/05/27 20:21:25 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
