@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: azamario <azamario@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/26 15:04:21 by azamario          #+#    #+#             */
-/*   Updated: 2021/10/14 17:55:55 by azamario         ###   ########.fr       */
+/*   Created: 2022/05/27 19:50:06 by joeduard          #+#    #+#             */
+/*   Updated: 2022/05/27 19:50:09 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

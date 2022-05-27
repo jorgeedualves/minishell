@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   executor.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ebresser <ebresser@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/08 23:19:00 by ebresser          #+#    #+#             */
-/*   Updated: 2022/05/24 22:53:23 by ebresser         ###   ########.fr       */
+/*   Created: 2022/05/27 19:41:12 by joeduard          #+#    #+#             */
+/*   Updated: 2022/05/27 19:41:16 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ebresser <ebresser@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/24 17:07:35 by azamario          #+#    #+#             */
-/*   Updated: 2022/03/16 22:25:00 by ebresser         ###   ########.fr       */
+/*   Created: 2022/05/27 19:59:13 by joeduard          #+#    #+#             */
+/*   Updated: 2022/05/27 19:59:17 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

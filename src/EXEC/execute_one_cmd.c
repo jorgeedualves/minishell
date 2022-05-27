@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   execute_one_cmd.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ebresser <ebresser@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/27 20:05:19 by vlima-nu          #+#    #+#             */
-/*   Updated: 2022/05/24 21:18:35 by ebresser         ###   ########.fr       */
+/*   Created: 2022/05/27 19:40:59 by joeduard          #+#    #+#             */
+/*   Updated: 2022/05/27 19:41:04 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

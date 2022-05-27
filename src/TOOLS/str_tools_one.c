@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   str_tools_one.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ebresser <ebresser@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/16 22:54:50 by ebresser          #+#    #+#             */
-/*   Updated: 2022/05/24 22:31:58 by ebresser         ###   ########.fr       */
+/*   Created: 2022/05/27 19:46:36 by joeduard          #+#    #+#             */
+/*   Updated: 2022/05/27 19:46:40 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

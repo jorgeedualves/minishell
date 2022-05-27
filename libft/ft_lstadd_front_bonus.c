@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vlima-nu <vlima-nu@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/08 04:19:34 by vlima-nu          #+#    #+#             */
-/*   Updated: 2021/08/08 04:19:34 by vlima-nu         ###   ########.fr       */
+/*   Created: 2022/05/27 19:51:10 by joeduard          #+#    #+#             */
+/*   Updated: 2022/05/27 19:51:10 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

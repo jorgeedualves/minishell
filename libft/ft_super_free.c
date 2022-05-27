@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_super_free.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: azamario <azamario@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/14 18:03:08 by azamario          #+#    #+#             */
-/*   Updated: 2021/10/14 18:09:13 by azamario         ###   ########.fr       */
+/*   Created: 2022/05/27 20:01:46 by joeduard          #+#    #+#             */
+/*   Updated: 2022/05/27 20:01:52 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

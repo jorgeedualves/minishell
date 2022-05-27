@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   treat_quotes.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ebresser <ebresser@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/08 02:55:15 by azamario          #+#    #+#             */
-/*   Updated: 2022/05/24 21:22:29 by ebresser         ###   ########.fr       */
+/*   Created: 2022/05/27 19:43:55 by joeduard          #+#    #+#             */
+/*   Updated: 2022/05/27 19:43:59 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   pipes_fds_handling.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vlima-nu <vlima-nu@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/08 23:19:00 by ebresser          #+#    #+#             */
-/*   Updated: 2022/05/10 10:43:02 by vlima-nu         ###   ########.fr       */
+/*   Created: 2022/05/27 19:41:45 by joeduard          #+#    #+#             */
+/*   Updated: 2022/05/27 19:41:50 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

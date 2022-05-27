@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   mask_n_unmask_chars.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ebresser <ebresser@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/02 22:18:03 by vlima-nu          #+#    #+#             */
-/*   Updated: 2022/05/24 21:12:44 by ebresser         ###   ########.fr       */
+/*   Created: 2022/05/27 19:43:34 by joeduard          #+#    #+#             */
+/*   Updated: 2022/05/27 19:43:38 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

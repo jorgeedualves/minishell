@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstlast_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vlima-nu <vlima-nu@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/08 04:19:50 by vlima-nu          #+#    #+#             */
-/*   Updated: 2021/08/08 04:19:51 by vlima-nu         ###   ########.fr       */
+/*   Created: 2022/05/27 19:53:50 by joeduard          #+#    #+#             */
+/*   Updated: 2022/05/27 19:53:53 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

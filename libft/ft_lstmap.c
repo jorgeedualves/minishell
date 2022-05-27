@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: azamario <azamario@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/06/10 16:54:08 by azamario          #+#    #+#             */
-/*   Updated: 2021/10/14 17:57:35 by azamario         ###   ########.fr       */
+/*   Created: 2022/05/27 19:54:31 by joeduard          #+#    #+#             */
+/*   Updated: 2022/05/27 19:54:35 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

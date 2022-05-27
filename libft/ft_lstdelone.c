@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: azamario <azamario@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/06/08 22:17:09 by azamario          #+#    #+#             */
-/*   Updated: 2021/10/14 17:57:08 by azamario         ###   ########.fr       */
+/*   Created: 2022/05/27 19:52:09 by joeduard          #+#    #+#             */
+/*   Updated: 2022/05/27 19:53:31 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

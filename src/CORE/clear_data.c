@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   clear_data.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ebresser <ebresser@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/02 17:29:32 by vlima-nu          #+#    #+#             */
-/*   Updated: 2022/05/12 00:29:33 by ebresser         ###   ########.fr       */
+/*   Created: 2022/05/27 19:38:28 by joeduard          #+#    #+#             */
+/*   Updated: 2022/05/27 19:38:31 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

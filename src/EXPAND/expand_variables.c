@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   expand_variables.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ocarlos- <ocarlos-@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/20 15:34:28 by ebresser          #+#    #+#             */
-/*   Updated: 2022/05/24 23:36:37 by ocarlos-         ###   ########.fr       */
+/*   Created: 2022/05/27 19:42:48 by joeduard          #+#    #+#             */
+/*   Updated: 2022/05/27 19:42:52 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

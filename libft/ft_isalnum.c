@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: azamario <azamario@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/27 22:19:57 by azamario          #+#    #+#             */
-/*   Updated: 2021/10/14 17:54:37 by azamario         ###   ########.fr       */
+/*   Created: 2022/05/27 19:49:35 by joeduard          #+#    #+#             */
+/*   Updated: 2022/05/27 19:49:39 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

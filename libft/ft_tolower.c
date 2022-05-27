@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: azamario <azamario@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/27 18:13:18 by azamario          #+#    #+#             */
-/*   Updated: 2021/10/14 18:03:31 by azamario         ###   ########.fr       */
+/*   Created: 2022/05/27 20:01:58 by joeduard          #+#    #+#             */
+/*   Updated: 2022/05/27 20:02:02 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

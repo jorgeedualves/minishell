@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: azamario <azamario@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/24 15:34:23 by azamario          #+#    #+#             */
-/*   Updated: 2021/10/14 17:58:06 by azamario         ###   ########.fr       */
+/*   Created: 2022/05/27 19:55:38 by joeduard          #+#    #+#             */
+/*   Updated: 2022/05/27 19:55:42 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

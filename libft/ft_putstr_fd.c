@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: azamario <azamario@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/06/03 16:02:22 by azamario          #+#    #+#             */
-/*   Updated: 2021/10/14 17:59:48 by azamario         ###   ########.fr       */
+/*   Created: 2022/05/27 19:58:29 by joeduard          #+#    #+#             */
+/*   Updated: 2022/05/27 19:58:38 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

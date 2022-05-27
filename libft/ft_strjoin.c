@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: azamario <azamario@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/29 20:41:00 by azamario          #+#    #+#             */
-/*   Updated: 2021/10/14 18:00:29 by azamario         ###   ########.fr       */
+/*   Created: 2022/05/27 19:59:49 by joeduard          #+#    #+#             */
+/*   Updated: 2022/05/27 19:59:59 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

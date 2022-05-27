@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: azamario <azamario@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/26 15:21:48 by azamario          #+#    #+#             */
-/*   Updated: 2021/10/14 17:54:55 by azamario         ###   ########.fr       */
+/*   Created: 2022/05/27 19:49:55 by joeduard          #+#    #+#             */
+/*   Updated: 2022/05/27 19:50:00 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: azamario <azamario@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/06/02 22:06:52 by azamario          #+#    #+#             */
-/*   Updated: 2021/10/14 18:01:15 by azamario         ###   ########.fr       */
+/*   Created: 2022/05/27 20:00:46 by joeduard          #+#    #+#             */
+/*   Updated: 2022/05/27 20:00:49 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

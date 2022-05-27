@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: azamario <azamario@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/29 20:37:15 by azamario          #+#    #+#             */
-/*   Updated: 2021/10/14 18:02:00 by azamario         ###   ########.fr       */
+/*   Created: 2022/05/27 20:01:30 by joeduard          #+#    #+#             */
+/*   Updated: 2022/05/27 20:01:33 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

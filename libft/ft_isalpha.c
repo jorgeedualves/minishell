@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: azamario <azamario@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/26 14:21:22 by azamario          #+#    #+#             */
-/*   Updated: 2021/10/14 17:54:44 by azamario         ###   ########.fr       */
+/*   Created: 2022/05/27 19:49:45 by joeduard          #+#    #+#             */
+/*   Updated: 2022/05/27 19:49:49 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

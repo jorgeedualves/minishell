@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: azamario <azamario@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/06/03 17:43:22 by azamario          #+#    #+#             */
-/*   Updated: 2021/10/14 17:59:38 by azamario         ###   ########.fr       */
+/*   Created: 2022/05/27 19:58:21 by joeduard          #+#    #+#             */
+/*   Updated: 2022/05/27 19:58:24 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
