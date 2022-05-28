@@ -15,7 +15,7 @@ Fazendo seu próprio Linux Shell em C
 
 ## Flowchat:
 
-<img src="img/minishell_miro.jpg" width=100px>
+<img src="img/minishell_miro.jpg" width=500px>
 
 
 🚧 project:<br/>
