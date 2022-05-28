@@ -2,7 +2,7 @@
 Fazendo seu próprio Linux Shell em C
 
 ## Badge
-<img src="minishell.png">
+<img src="img/minishell.png">
 
 ## Skills
 - Unix
@@ -11,7 +11,7 @@ Fazendo seu próprio Linux Shell em C
 - Algorithms & AI 
 
 ## My grade
-<img src="score_push_swap.png">
+<img src="img/score_push_swap.png">
 
 ## Flowchat:
 
