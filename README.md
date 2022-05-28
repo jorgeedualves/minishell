@@ -11,11 +11,11 @@ Fazendo seu próprio Linux Shell em C
 - Algorithms & AI 
 
 ## My grade
-<img src="img/score_push_swap.png">
+<img src="img/minishell.png">
 
 ## Flowchat:
 
-<img src="minishell_miro.jpg">
+<img src="img/minishell_miro.jpg width=100px">
 
 
 🚧 project:<br/>
