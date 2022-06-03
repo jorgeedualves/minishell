@@ -6,7 +6,7 @@
 /*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/27 19:37:27 by joeduard          #+#    #+#             */
-/*   Updated: 2022/05/27 19:37:35 by joeduard         ###   ########.fr       */
+/*   Updated: 2022/06/02 02:22:55 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	unset(t_data *data, int id)
 {
+	printf("\n[--------------------------]\n");
+	printf("--UNSET.C---->[unset]\n");
 	int		i;
 	int		arglen;
 	int		arg;
@@ -38,4 +40,5 @@ void	unset(t_data *data, int id)
 		}
 		delete_in_list(data->argve[id][arg++], &data->vars);
 	}
+	printf("[------ saida [unset]-------------------]\n");
 }

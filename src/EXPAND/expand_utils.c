@@ -6,7 +6,7 @@
 /*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/27 19:42:38 by joeduard          #+#    #+#             */
-/*   Updated: 2022/05/27 19:42:42 by joeduard         ###   ########.fr       */
+/*   Updated: 2022/06/02 02:47:11 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 // finds the variables on argve
 int	find_vars(char **argve)
 {
+	printf("\n[--------------------------]\n");
+	printf("--EXPAND_UTILS.C---->[find_vars]\n");
 	int	i;
 
 	i = 0;
@@ -26,12 +28,14 @@ int	find_vars(char **argve)
 			return (i);
 		i++;
 	}
+	printf("[------ saida [find_vars]-------------------]\n");
 	return (-1);
 }
 
 // creates space on the argve for the expanded variables
 void	make_space(char **argve, int start)
 {
+	printf("--EXPAND_UTILS.C---->[make_space]\n");
 	int	i;
 
 	i = 0;
@@ -46,11 +50,13 @@ void	make_space(char **argve, int start)
 		i--;
 	}
 	free(argve[i]);
+	printf("[------ saida [make_space]-------------------]\n");
 }
 
 // allocates a bigger argve, copies the old to the new one and frees the old one
 char	**new_argve(char *value, t_data *data, int id)
 {
+	printf("--EXPAND_UTILS.C---->[new_argve]\n");
 	char	**cmdstr;
 	char	**temp_argve;
 	int		cmdstr_size;
@@ -65,12 +71,15 @@ char	**new_argve(char *value, t_data *data, int id)
 	free(data->argve[id]);
 	data->argve[id] = temp_argve;
 	data->argve[id][argve_size] = 0x0;
+	printf("[------ saida [new_argve]-------------------]\n");
 	return (cmdstr);
 }
 
 // makes room for new args and inserts it into data structure
 void	insert_new_args(t_data *data, char **cmdstr, int i, int id)
 {
+	printf("\n[--------------------------]\n");
+	printf("--EXPAND_UTILS.C---->[insert_new_args]\n");
 	free(data->argve[id][i]);
 	data->argve[id][i] = ft_strdup(*cmdstr);
 	while (*(++cmdstr))
@@ -78,4 +87,5 @@ void	insert_new_args(t_data *data, char **cmdstr, int i, int id)
 		make_space(data->argve[id], ++i);
 		data->argve[id][i] = ft_strdup(*cmdstr);
 	}
+	printf("[------ saida [insert_new_args]-------------------]\n");
 }

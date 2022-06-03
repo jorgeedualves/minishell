@@ -6,7 +6,7 @@
 /*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/27 19:41:45 by joeduard          #+#    #+#             */
-/*   Updated: 2022/05/27 19:41:50 by joeduard         ###   ########.fr       */
+/*   Updated: 2022/06/02 02:26:27 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 int	open_pipes(t_data *data)
 {
+	printf("\n[--------------------------]\n");
+	printf("--PIPES_FDS_HANDLING.C---->[open_pipes]\n");
 	int	id;
 	int	j;
 
@@ -33,11 +35,13 @@ int	open_pipes(t_data *data)
 			return (FAILURE);
 		}
 	}
+	printf("\n[--------------------------]\n");
 	return (SUCCESS);
 }
 
 int	close_other_fds(int id, t_data *data)
 {
+		printf("--PIPES_FDS_HANDLING.C---->[close_other_fds]\n");
 	int	j;
 
 	j = 0;
@@ -54,6 +58,7 @@ int	close_other_fds(int id, t_data *data)
 
 int	stdin_stdout_handler(int in, int out)
 {
+	printf("--PIPES_FDS_HANDLING.C---->[stdin_stdout_handler]\n");
 	if (in != NOT_EXIST)
 	{
 		dup2(in, STDIN_FILENO);
@@ -69,6 +74,7 @@ int	stdin_stdout_handler(int in, int out)
 
 int	file_descriptor_handler(int id, t_data *data)
 {
+	printf("--PIPES_FDS_HANDLING.C---->[file_descriptor_handler]\n");
 	int	fd_in;
 	int	fd_out;
 
@@ -83,5 +89,6 @@ int	file_descriptor_handler(int id, t_data *data)
 	if (fd_out != NOT_EXIST)
 		fd_out = data->fd[id][1];
 	stdin_stdout_handler(fd_in, fd_out);
+	printf("[------ saida [file_descriptor_handler]------------------]\n");
 	return (SUCCESS);
 }

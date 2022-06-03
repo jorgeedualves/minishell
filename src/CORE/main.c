@@ -6,7 +6,7 @@
 /*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/27 19:39:11 by joeduard          #+#    #+#             */
-/*   Updated: 2022/05/27 19:39:16 by joeduard         ###   ########.fr       */
+/*   Updated: 2022/06/02 02:25:02 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,8 @@ int	main(int argc, char **argv, char **envp)
 {
 	t_data	*data;
 
+	printf("\n[--------------------------]\n");
+	printf("--MAIN.C---->[main]\n");
 	if (argc > 1 && *argv)
 	{
 		ft_putendl_fd("Minishell: Too many arguments", 2);
@@ -47,5 +49,6 @@ int	main(int argc, char **argv, char **envp)
 	init_data(data, envp);
 	while (TRUE)
 		minishell(data);
+	printf("[------ saida [main]-------------------]\n");
 	return (0);
 }

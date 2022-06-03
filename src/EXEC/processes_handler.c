@@ -6,7 +6,7 @@
 /*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/27 19:41:57 by joeduard          #+#    #+#             */
-/*   Updated: 2022/05/27 19:42:07 by joeduard         ###   ########.fr       */
+/*   Updated: 2022/06/02 02:26:33 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	main_process_handler(t_data *data)
 {
+	printf("\n[--------------------------]\n");
+	printf("--PROCESSES_HANDLER.C---->[main_process_handler]\n");
 	int	count;
 	int	status;
 
@@ -30,11 +32,13 @@ void	main_process_handler(t_data *data)
 		waitpid(data->pid[count++], &status, 0);
 		if (!g_status_code)
 			g_status_code = WEXITSTATUS(status);
-	}		
+	}
+	printf("\n[------ saida [ain_process_handler]------------------]\n");	
 }
 
 void	create_executor_parametes(t_data *data)
 {
+	printf("--PROCESSES_HANDLER.C---->[create-executor_parametes]\n");
 	int		i;
 
 	i = 0;
@@ -49,4 +53,5 @@ void	create_executor_parametes(t_data *data)
 			exit_minishell(data, FAILURE);
 		i++;
 	}
+	printf("[------ saida [create-executor_parametes]------------------]\n");
 }

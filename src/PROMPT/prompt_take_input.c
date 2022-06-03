@@ -6,7 +6,7 @@
 /*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/27 19:45:38 by joeduard          #+#    #+#             */
-/*   Updated: 2022/05/27 19:45:41 by joeduard         ###   ########.fr       */
+/*   Updated: 2022/06/02 02:37:21 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 void	prompt(t_data *data)
 {
+	printf("--PROMPT_TAKE_INPUT.C---->[prompt]\n");
 	char	cwd[1024];
 	char	*prompt_str;
 	char	*username;
@@ -24,11 +25,14 @@ void	prompt(t_data *data)
 							"\e[35m", cwd, "\e[0m", "$ ");
 	data->input = readline(prompt_str);
 	free(prompt_str);
+	printf("[------ saida [prompt] -------------------]\n");
 }
 
 /** Function to take input - MALLOC input*/
 int	take_input(t_data *data)
 {
+	printf("\n[--------------------------]\n");
+	printf("--PROMPOT_TAKE_INPUT.C---->[take input]\n");
 	prompt(data);
 	if (!data->input)
 		exit_minishell(data, SUCCESS);
@@ -40,8 +44,13 @@ int	take_input(t_data *data)
 		if (data->old_input)
 			free(data->old_input);
 		data->old_input = ft_strdup(data->input);
+		printf("[------ saida [take input]-------------------]\n");
 		return (SUCCESS);
 	}
 	else
+	{
+		printf("[------ saida [take input]-------------------]\n");
 		return (FAILURE);
+	}
+
 }

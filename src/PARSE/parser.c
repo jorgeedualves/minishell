@@ -6,7 +6,7 @@
 /*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/27 19:45:08 by joeduard          #+#    #+#             */
-/*   Updated: 2022/05/27 19:45:12 by joeduard         ###   ########.fr       */
+/*   Updated: 2022/06/02 02:36:52 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,18 @@ static void	pull_variables(t_data *data);
 // functions for parsing command line
 int	parser(t_data *data)
 {
+	printf("\n[--------------------------]\n");
+	printf("--PARSER.C---->[parser]\n");
 	data->exec_flag = (char *)ft_calloc(data->number_of_pipes + 1, \
 		sizeof(char));
 	pull_variables(data);
+	printf("[------ saida [parser]-------------------]\n");
 	return (SUCCESS);
 }
 
 static void	pull_variables(t_data *data)
 {
+	printf("--PARSER.C---->[pull_variables]\n");
 	int		i;
 	int		j;
 	int		till_i;
@@ -51,10 +55,12 @@ static void	pull_variables(t_data *data)
 			shift_id_cmd(data, till_i, till_j);
 		i++;
 	}
+	printf("[------ saida [pull_variables]-------------------]\n");
 }
 
 static void	shift_id_cmd(t_data *data, int id, int up_to_token)
 {
+	printf("--PARSER.C---->[shift_id_cmd]\n");
 	char	**aux;
 	int		no_str;
 	int		index;
@@ -76,4 +82,5 @@ static void	shift_id_cmd(t_data *data, int id, int up_to_token)
 	free(data->argve[id]);
 	data->argve[id] = aux;
 	data->exec_flag[id] = TRUE;
+	printf("[------ saida [shift_id_cmd]-------------------]\n");
 }

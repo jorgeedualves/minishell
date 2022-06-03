@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   mask_dollar.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ebresser <ebresser@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/02 21:49:28 by vlima-nu          #+#    #+#             */
-/*   Updated: 2022/05/24 20:21:56 by ebresser         ###   ########.fr       */
+/*   Updated: 2022/06/02 02:47:18 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ static void	cut_dollar(t_data *data, int i);
 
 void	mask_dollar(t_data *data)
 {
+	printf("\n[--------------------------]\n");
+	printf("--MASK_DOLLAR.C---->[mask_dollar]\n");
 	int	i;
 	int	sign;
 
@@ -38,10 +40,12 @@ void	mask_dollar(t_data *data)
 			}
 		}
 	}
+	printf("[------ saida [mask_dollar]-------------------]\n");
 }
 
 static void	cut_dollar(t_data *data, int i)
 {
+	printf("--MASK_DOLLAR.C---->[cut_dollar]\n");
 	int		j;
 
 	if (!data->input[i + 1] || data->input[i + 1] == 1 || \
@@ -53,14 +57,19 @@ static void	cut_dollar(t_data *data, int i)
 		ft_strcut(&data->input, i, i + j + 1);
 		i--;
 	}
+	printf("[------ saida [cut_dollar]-------------------]\n");
 }
 
 static int	is_dollar_sign(char c)
 {
+	printf("--MASK_DOLLAR.C---->[is_dollar]\n");
+	printf("[------ saida [is_dollar]-------------------]\n");
 	return (c == '$');
 }
 
 static int	is_quotes_or_space(char c)
 {
+	printf("--MASK_DOLLAR.C---->[is_ quotes_or_space]\n");
+	printf("[------ saida [is_ quotes_or_space]-------------------]\n");
 	return (ft_strchr("\'\"", c) || c == 1);
 }

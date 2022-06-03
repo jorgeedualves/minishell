@@ -6,7 +6,7 @@
 /*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/27 19:42:27 by joeduard          #+#    #+#             */
-/*   Updated: 2022/05/27 19:42:31 by joeduard         ###   ########.fr       */
+/*   Updated: 2022/06/02 03:06:23 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 int	is_builtins(char *cmd)
 {
+	printf("\n[--------------------------]\n");
+	printf("--SORTING.C---->[is_builtins]\n");
 	int		i;
 	int		switcher;
 	char	*builtin_cmd[NUMBER_OF_BUILTINS];
@@ -37,5 +39,6 @@ int	is_builtins(char *cmd)
 			break ;
 		}
 	}
+	printf("[------ saida [is_builtins]------------------]\n");
 	return (switcher);
 }

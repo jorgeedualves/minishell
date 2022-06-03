@@ -6,7 +6,7 @@
 /*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/27 19:41:12 by joeduard          #+#    #+#             */
-/*   Updated: 2022/05/27 19:41:16 by joeduard         ###   ########.fr       */
+/*   Updated: 2022/06/02 02:26:04 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ static void	ft_execve(t_data *data, int id);
 
 int	executor(t_data *data)
 {
+	printf("\n[--------------------------]\n");
+	printf("--EXECUTOR.C---->[executor]\n");
 	int		id;
 
 	g_status_code = 0;
@@ -41,11 +43,13 @@ int	executor(t_data *data)
 			execute_pid(data, id);
 	}
 	main_process_handler(data);
+	printf("\n[------ saida [exexutor]-------------------]\n");
 	return (SUCCESS);
 }
 
 static int	execute_pid(t_data *data, int id)
 {
+	printf("--EXECUTOR.C---->[execute_pid]\n");
 	int	builtin_flag;
 	int	save_fd[2];
 
@@ -66,6 +70,7 @@ static int	execute_pid(t_data *data, int id)
 
 static void	ft_execve(t_data *data, int id)
 {
+		printf("--EXECUTOR.C---->[ft_execve]\n");
 	if (ft_strchr(data->argve[id][0], '/'))
 	{
 		execve(data->argve[id][0], data->argve[id], data->envp);
@@ -83,6 +88,7 @@ static void	ft_execve(t_data *data, int id)
 
 static int	find_path_and_execve(t_data *data, int id)
 {
+	printf("--EXECUTOR.C---->[find_path_and_execve]\n");
 	int		i;
 	char	*path_aux;
 
@@ -103,11 +109,13 @@ static int	find_path_and_execve(t_data *data, int id)
 			i++;
 		}
 	}
+	printf("\n[------ saida [find_path_and_execve]-------------------]\n");
 	return (FAILURE);
 }
 
 void	builtin_exec(t_data *data, int code, int id)
 {
+	printf("--EXECUTOR.C---->[builtin_exec]\n");
 	if (code == EXIT)
 		mini_exit(data, id);
 	else if (code == CD)
@@ -122,4 +130,5 @@ void	builtin_exec(t_data *data, int code, int id)
 		unset(data, id);
 	else if (code == EXPORT)
 		export(data, id);
+	printf("[------ saida [builtin_exec]-------------------]\n");
 }

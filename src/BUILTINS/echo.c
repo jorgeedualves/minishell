@@ -6,7 +6,7 @@
 /*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/27 19:35:17 by joeduard          #+#    #+#             */
-/*   Updated: 2022/05/27 19:35:22 by joeduard         ###   ########.fr       */
+/*   Updated: 2022/06/02 13:37:12 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ static int	is_n_str(char *s);
 
 void	echo(t_data *data, int id)
 {
+	printf("\n[--------------------------]\n");
+	printf("--ECHO.C---->[echo]\n");
 	int	break_line;
 	int	index;
 
@@ -35,10 +37,12 @@ void	echo(t_data *data, int id)
 	}
 	else
 		ft_putstr_fd("\n", 1);
+	printf("[------ saida [echo]-------------------]\n");
 }
 
 static int	is_n_flag(t_data *data, int id, int *index)
 {
+	printf("--ECHO.C---->[is_n_flag]\n");
 	int	break_line;
 
 	break_line = 1;
@@ -58,16 +62,22 @@ static int	is_n_flag(t_data *data, int id, int *index)
 		else
 			break ;
 	}
+	printf("[------ saida [is_n_flag]-------------------]\n");
 	return (break_line);
 }
 
 static int	is_n_str(char *s)
 {
+	printf("--ECHO.C---->[is_n_str]\n");
 	while (*s)
 	{
 		if (*s != 'n')
+		{
+			printf("[------ saida [is_n_str]-FALSE-------------]\n");
 			return (FALSE);
+		}
 		s++;
 	}
+	printf("[------ saida [is_n_str]-TRUE--------------]\n");
 	return (TRUE);
 }

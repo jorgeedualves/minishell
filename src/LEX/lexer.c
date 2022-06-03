@@ -6,7 +6,7 @@
 /*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/27 19:43:09 by joeduard          #+#    #+#             */
-/*   Updated: 2022/05/27 19:43:14 by joeduard         ###   ########.fr       */
+/*   Updated: 2022/06/02 02:47:16 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 // Create an aux **str based on pipe
 int	pull_pipe(t_data *data)
 {
+	printf("--LEXER.C---->[pull_pipe]\n");
 	int		i;
 
 	i = 0;
@@ -34,12 +35,14 @@ int	pull_pipe(t_data *data)
 	data->number_of_pipes = ft_str_count(data->cmds_piped) - 1;
 	while (data->cmds_piped[i])
 		unmask_character(data->cmds_piped[i++], 6, '|');
+	printf("[------ saida [pull_pipe]-------------------]\n");
 	return (SUCCESS);
 }
 
 // Aqui fica o formato da estrutura argve - É por isso que n retorna, mova diretamente na estrutura
 void	pull_space(t_data *data)
 {
+	printf("--LEXER.C---->[pull_space]\n");
 	int		i;
 	int		no_cmds;
 
@@ -61,16 +64,29 @@ void	pull_space(t_data *data)
 		}
 		i++;
 	}
+	printf("[------ saida [pull_space]-------------------]\n");
 }
 
 int	lexer(t_data *data)
 {
+	printf("\n[--------------------------]\n");
+	printf("--LEXER.C---->[lexer]\n");
 	if (pull_quotes(data))
+	{
+		printf("[------ saida [lexer]-------------------]\n");
 		return (FAILURE);
+	}
 	if (pull_pipe(data))
+	{
+		printf("[------ saida [lexer]-------------------]\n");
 		return (FAILURE);
+	}
 	if (pull_redirects(data))
+	{
+		printf("[------ saida [lexer]-------------------]\n");
 		return (FAILURE);
+	}
 	pull_space(data);
+	printf("[------ saida [lexer]-------------------]\n");
 	return (SUCCESS);
 }

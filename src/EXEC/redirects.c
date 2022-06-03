@@ -6,7 +6,7 @@
 /*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/27 19:42:14 by joeduard          #+#    #+#             */
-/*   Updated: 2022/05/27 19:42:19 by joeduard         ###   ########.fr       */
+/*   Updated: 2022/06/02 02:26:48 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ static int	redirect(char *file, int flags, int std_fd);
 
 int	redirect_filter(t_data *data, int id, int *save_fd)
 {
+	printf("\n[--------------------------]\n");
+	printf("--REDIRECT.C---->[redirect]\n");
 	int	i;
 	int	status;
 
@@ -45,6 +47,7 @@ int	redirect_filter(t_data *data, int id, int *save_fd)
 
 static int	redirect(char *file, int flags, int std_fd)
 {
+	printf("--REDIRECT.C---->[redirect]\n");
 	int	fd;
 
 	if (!std_fd)
@@ -57,8 +60,10 @@ static int	redirect(char *file, int flags, int std_fd)
 	{
 		dup2(fd, std_fd);
 		close(fd);
+		printf("\n[------ saida [redirect]-SUCESS---------]\n");
 		return (SUCCESS);
 	}
 	g_status_code = 1;
+	printf("[------ saida [redirect]-FAILURE----------]\n");
 	return (FAILURE);
 }

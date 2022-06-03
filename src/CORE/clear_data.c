@@ -6,7 +6,7 @@
 /*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/27 19:38:28 by joeduard          #+#    #+#             */
-/*   Updated: 2022/05/27 19:38:31 by joeduard         ###   ########.fr       */
+/*   Updated: 2022/06/02 15:08:32 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	data_clean(t_data *data)
 {
+	printf("\n[--------------------------]\n");
+	printf("--CLEAR_DATA.C---->[data_clear]\n");
 	if (data->input)
 		free(data->input);
 	if (data->pid)
@@ -29,15 +31,20 @@ void	data_clean(t_data *data)
 	if (data->exec_flag)
 		free(data->exec_flag);
 	data->exec_flag = NULL;
+	printf("[------ saida [data_clear]-------------------]\n");
 }
 
 void	double_free(void ***ptr)
 {
+	printf("--CLEAR_DATA.C---->[double_free]\n");
 	int		i;
 
 	i = 0;
 	if (!*ptr)
+	{
+		printf("[------ saida [data_clear]--*ptr nao é NULL-----------------]\n");
 		return ;
+	}
 	while ((*ptr)[i])
 	{
 		if ((*ptr)[i])
@@ -47,10 +54,12 @@ void	double_free(void ***ptr)
 	}
 	free(*ptr);
 	*ptr = NULL;
+	printf("[------ saida [double_free]------------------]\n");
 }
 
 void	triple_free(char ****ptr, int number_of_ids)
 {
+	printf("--CLEAR_DATA.C---->[triple_free]\n");
 	int		id;
 	int		cmd;
 
@@ -76,4 +85,5 @@ void	triple_free(char ****ptr, int number_of_ids)
 	}
 	free(*ptr);
 	*ptr = NULL;
+	printf("[------ saida [triple_free]------------------]\n");
 }

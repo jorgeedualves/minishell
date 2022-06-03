@@ -6,7 +6,7 @@
 /*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/27 19:43:55 by joeduard          #+#    #+#             */
-/*   Updated: 2022/05/27 19:43:59 by joeduard         ###   ########.fr       */
+/*   Updated: 2022/06/02 02:35:44 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,16 @@
 */
 int	pull_quotes(t_data *data)
 {
+	printf("\n[--------------------------]\n");
+	printf("--TREAT_QUOTES.C---->[pull_quotes]\n");
 	if (mask_all_chars(data))
+	{
+		printf("[------ saida [pull_quotes]-------------------]\n");
 		return (FAILURE);
+	}
 	remove_extra_spaces(data);
 	treat_token_strings(data);
+	printf("[------ saida [pull_quotes]-------------------]\n");
 	return (SUCCESS);
 }
 
@@ -32,6 +38,7 @@ int	pull_quotes(t_data *data)
 */
 void	treat_token_strings(t_data *data)
 {
+	printf("--PULL_REDIRECTS.C---->[pull_redirects]\n");
 	char	**tokens;
 	char	*buf;
 	char	*string;
@@ -57,6 +64,7 @@ void	treat_token_strings(t_data *data)
 	double_free((void ***)&tokens);
 	free(data->input);
 	data->input = string;
+	printf("[------ saida [pull_redirects]-------------------]\n");
 }
 
 /*
@@ -64,6 +72,7 @@ void	treat_token_strings(t_data *data)
 */
 void	treat_quotes(char *token)
 {
+	printf("--PULL_REDIRECTS.C---->[treat_quotes]\n");
 	int	i;
 
 	i = 0;
@@ -87,6 +96,7 @@ void	treat_quotes(char *token)
 		}
 		i++;
 	}
+	printf("[------ saida [treat_quotes]-------------------]\n");
 }
 
 /*
@@ -95,6 +105,7 @@ void	treat_quotes(char *token)
 */
 void	no_quotes(char *token)
 {
+	printf("--PULL_REDIRECTS.C---->[no_quotes]\n");
 	int		quotes;
 	char	*string;
 	int		i;
@@ -119,10 +130,12 @@ void	no_quotes(char *token)
 	string = reverse_quotes_treat(string);
 	ft_strlcpy(token, string, ft_strlen(string) + 1);
 	free(string);
+	printf("[------ saida [no_quotes]-------------------]\n");
 }
 
 char	*tokens_to_string(char const *s1, char const *s2)
 {
+	printf("--PULL_REDIRECTS.C---->[tokens_to_string]\n");
 	char		*string;
 	int			space;
 	size_t		i;
@@ -146,5 +159,6 @@ char	*tokens_to_string(char const *s1, char const *s2)
 	while (s2[++j])
 		string[i + j] = s2[j];
 	string[i + j] = '\0';
+	printf("[------ saida [tokens_to_string]-------------------]\n");
 	return (string);
 }

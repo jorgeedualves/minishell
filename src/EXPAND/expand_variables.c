@@ -6,7 +6,7 @@
 /*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/27 19:42:48 by joeduard          #+#    #+#             */
-/*   Updated: 2022/05/27 19:42:52 by joeduard         ###   ########.fr       */
+/*   Updated: 2022/06/02 02:31:55 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ static char	*ret_full_value(char **s, int offset, t_vdt *vdt, int i);
 
 void	expander(t_data *data)
 {
+	printf("\n[--------------------------]\n");
+	printf("--EXPAND_VARIABLES.C---->[expander]\n");
 	int		i;
 	int		id;
 	char	*var_value;
@@ -42,10 +44,12 @@ void	expander(t_data *data)
 		}
 		unmask_dollar_and_space(data, id);
 	}
+	printf("[------ saida [expander]-------------------]\n");
 }
 
 static void	unmask_dollar_and_space(t_data *data, int id)
 {
+	printf("--EXPAND_VARIABLES.C---->[unmask_dollar_and_space]\n");
 	int	i;
 
 	i = 0;
@@ -54,10 +58,12 @@ static void	unmask_dollar_and_space(t_data *data, int id)
 		unmask_character(data->argve[id][i], 7, '$');
 		unmask_character(data->argve[id][i++], 1, ' ');
 	}
+	printf("[------ saida [unmask_dollar_and_space]-------------------]\n");
 }
 
 static void	save_vars(t_data *data, int id, int i, char *var_value)
 {
+	printf("--EXPAND_VARIABLES.C---->[save_vars]\n");
 	char	**cmdstr;
 
 	cmdstr = new_argve(var_value, data, id);
@@ -70,10 +76,12 @@ static void	save_vars(t_data *data, int id, int i, char *var_value)
 	}
 	double_free((void ***)&cmdstr);
 	ft_super_free((void **)&var_value);
+	printf("[------ saida [save_vars]-------------------]\n");
 }
 
 static char	*pull_var_value(char **s, t_vars *vars)
 {
+	printf("--EXPAND_VARIABLES.C---->[pull_var_value]\n");
 	char	*var_name;
 	int		offset;
 	int		i;
@@ -85,16 +93,18 @@ static char	*pull_var_value(char **s, t_vars *vars)
 	i = offset + 1;
 	while ((ft_isalnum(s[0][i]) || s[0][i] == '_') && s[0][i])
 		i++;
-	if (s[0][i] == '?')
+	if (s[0][i] == '?' && i == offset + 1) // colocar no projeto 
 		i++;
 	var_name = ft_substr(s[0], offset, i - offset);
 	vdt = find_in_list(var_name, vars);
 	free(var_name);
+	printf("[------ saida [pull_var_value]-------------------]\n");
 	return (ret_full_value(s, offset, &vdt, i));
 }
 
 static char	*ret_full_value(char **s, int offset, t_vdt *vdt, int i)
 {
+	printf("--EXPAND_VARIABLES.C---->[ret_full_value]\n");
 	char	*ret;
 	char	*prefix;
 
@@ -111,5 +121,6 @@ static char	*ret_full_value(char **s, int offset, t_vdt *vdt, int i)
 			free(vdt->value);
 		free(prefix);
 	}
+	printf("[------ saida [ret_full_value]-------------------]\n");
 	return (ret);
 }

@@ -6,7 +6,7 @@
 /*   By: joeduard <joeduard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/27 19:36:51 by joeduard          #+#    #+#             */
-/*   Updated: 2022/05/27 19:36:56 by joeduard         ###   ########.fr       */
+/*   Updated: 2022/06/02 15:37:03 by joeduard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ static void	printmsg(char *str);
 
 void	export(t_data *data, int id)
 {
+	printf("\n[--------------------------]\n");
+	printf("--EXPORT.C---->[export]\n");
 	int		i;
 	int		strsize;
 
@@ -42,11 +44,13 @@ void	export(t_data *data, int id)
 			sort_export(data->envp);
 		i++;
 	}
+	printf("[------ saida [export]-------------------]\n");
 }
 
 // sorts envp content and prints on screen
 static void	sort_export(char **envp)
 {
+	printf("--EXPORT.C---->[sort_export]\n");
 	char	**temp_envp;
 	int		i;
 	int		last;
@@ -70,11 +74,13 @@ static void	sort_export(char **envp)
 	while (i < last)
 		printf("declare -x %s\n", temp_envp[i++]);
 	free(temp_envp);
+	printf("[------ saida [sort_export]-----free(temp_envp)----------]\n");
 }
 
 // checks if expression is "export $" or var is number -> invalid input
 static int	invalid_var(char ***argve, int id, int n)
 {
+	printf("--EXPORT.C---->[invalid_var]\n");
 	if (ft_strcmp(argve[id][0], "export") == 0 &&
 		(ft_strcmp(argve[id][1], "$") == 0 ||
 		ft_strcmp(argve[id][1], "=") == 0) &&
@@ -82,24 +88,36 @@ static int	invalid_var(char ***argve, int id, int n)
 		return (TRUE);
 	else if (ft_strcmp(argve[id][0], "export") == 0 && \
 	(isdigitvar(argve[id][n]) || !ft_isalpha(argve[id][n][0])))
+	{
+		printf("[------ saida [new_bigger_envp]-TRUE--------------]\n");
 		return (TRUE);
+	}
 	else
+	{
+		printf("[------ saida [new_bigger_envp]-FALSE--------------]\n");
 		return (FALSE);
+	}
 }
 
 static int	isdigitvar(char *vardefinition)
 {
+	printf("--EXPORT.C---->[isdigitvar]\n");
 	while (*vardefinition && *vardefinition != '=')
 	{
 		if (!ft_isdigit(*vardefinition))
+		{
+			printf("[------ saida [new_bigger_envp]-FALSE--------------]\n");
 			return (FALSE);
+		}
 		vardefinition++;
 	}
+	printf("[------ saida [new_bigger_envp]-TRUE--------------]\n");
 	return (TRUE);
 }
 
 void	printmsg(char *str)
 {
+	printf("--EXPORT.C---->[printmsg]\n");
 	printf("Minishell: export: ");
 	printf("`%s': not a valid identifier\n", str);
 }
