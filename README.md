@@ -23,6 +23,9 @@ Um shell faz três coisas principais em sua vida:
 - Rigor
 - Algorithms & AI 
 
+## Demo
+<img src="img/minishell.gif">
+
 ## My grade
 <img src="img/score_minishell.png">
 
