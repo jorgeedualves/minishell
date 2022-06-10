@@ -34,7 +34,7 @@ Um shell faz três coisas principais em sua vida:
 
 
 🚧 project:<br/>
-```
+
 # Compile the program with
 make
 
@@ -51,17 +51,16 @@ exit
 make fclean
 
 :shower: Clean Obj files:<br/>
-```
+
 minishell $ make clean
-```
+
 :shower: :shower: Clean All (obj files + binary):<br/>
-```
+
 minishell $ make fclean
-```
+
 :shower: :shower: 🚧 Clean All + build:<br/>
-```
-minishell $ make re
-```
+
+minishell $ make re 
 
 <br/>See Makefile<br/>
 
