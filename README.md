@@ -35,19 +35,19 @@ Um shell faz três coisas principais em sua vida:
 
 🚧 project:<br/>
 
-# Compile the program with
+## Compile the program with
 make
 
-# Run the program
+## Run the program
 ./minishell
 
-# Write any shell command like
+## Write any shell command like
 echo "hello world"
 
-# Quit the program
+## Quit the program
 exit
 
-# Clean output objects with
+## Clean output objects with
 make fclean
 
 :shower: Clean Obj files:<br/>
