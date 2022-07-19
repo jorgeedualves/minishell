@@ -17,6 +17,10 @@ Um shell faz três coisas principais em sua vida:
 - **Initialize**: Nesta etapa, um shell típico leria e executaria seus arquivos de configuração. Isso altera aspectos do comportamento do shell;
 - **Interpret**: Em seguida, o shell lê comandos de stdin(que pode ser interativo ou um arquivo) e os executa;
 - **Terminate**: Depois que seus comandos são executados, o shell executa qualquer comandos de desligamento, libera qualquer memória e termina;
+
+## Badge
+<img src="img/minishell_badge.png">
+
 ## Skills
 - Unix
 - Imperative programming
